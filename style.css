@@ -65,6 +65,94 @@
 }
 
 .hovered-card .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.hovered-card {
+    transition: 0.3s ease;
+}
+
+.hovered-card:hover {
+    transform: translateY(-5px);
+}
+
+/* service */
+#service {
+    background-color: #2f6ba7;
+}
+
+.icon-service {
+    width: 90px;
+    height: 90px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #ffff;
+}
+
+/* testimony */
+.testimony {
+    background-color: rgba(124, 124, 207, 0.253);
+}
+
+.testimony-card {
+    background-color: #ffffff63;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+    border: 1px solid rgba(0, 0, 255, 0.205);
+}
+
+.testimony-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.testimony-card .quote-icon {
+    font-size: 2rem;
+    color: #2f6ba7;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.testimony-card h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: black;
+}
+
+.testimony-card .author {
+    font-size: 0.8rem;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.testimony-card p {
+    font-size: 0.88rem;
+    color: black;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.testimony-card .stars {
+    color: #f8c146;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+}
+
+/* subscribe */
+.footer {
+    background-color: #2f6ba7;
+}
+
+.footer .social-icon {
+    font-size: 1.6rem;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.footer .social-icon:hover {
+    color: #f8c146;
 }
