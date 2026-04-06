@@ -60,20 +60,20 @@
 }
 
 /* card */
-.hovered-card .card {
+.card-hover .card {
     transition: 0.3s ease;
 }
 
-.hovered-card .card:hover {
+.card-hover .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-.hovered-card {
+.card-hover {
     transition: 0.3s ease;
 }
 
-.hovered-card:hover {
+.card-hover:hover {
     transform: translateY(-5px);
 }
 
@@ -170,4 +170,69 @@
 
 .portrait {
     aspect-ratio: 1 / 1;
+}
+
+/* Promo */
+.promo-section {
+    animation: fadeSlideIn 0.4s ease both;
+}
+
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.promo-section .hovered-card {
+    opacity: 0;
+    animation: fadeSlideIn 0.4s ease forwards;
+}
+
+.promo-section .hovered-card:nth-child(1) {
+    animation-delay: 0.05s;
+}
+.promo-section .hovered-card:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.promo-section .hovered-card:nth-child(3) {
+    animation-delay: 0.15s;
+}
+.promo-section .hovered-card:nth-child(4) {
+    animation-delay: 0.2s;
+}
+.promo-section .hovered-card:nth-child(5) {
+    animation-delay: 0.25s;
+}
+.promo-section .hovered-card:nth-child(6) {
+    animation-delay: 0.3s;
+}
+.promo-section .hovered-card:nth-child(7) {
+    animation-delay: 0.35s;
+}
+.promo-section .hovered-card:nth-child(8) {
+    animation-delay: 0.4s;
+}
+
+.filter-btn {
+    transition: 
+        background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.15s ease,
+        box-shadow 0.25s ease;
+}
+
+.filter-btn:active {
+    transform: scale(0.95);
+}
+.filter-btn:active {
+    box-shadow: 0 4px 14px rgba(255, 193, 7, 0.45);
+}
+
+.land {
+    aspect-ratio: 16 / 9;
 }
