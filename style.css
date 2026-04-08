@@ -236,3 +236,23 @@
 .land {
     aspect-ratio: 16 / 9;
 }
+
+
+
+/* produk  */
+.p-banner {
+    background: linear-gradient(rgba(170, 170, 170, 0.342),rgba(170, 170, 170, 0.26) 90%, #f8f9fa 100%), url("images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+}
+
+.t-none {
+    text-decoration: none;
+}
+
+.shadow {
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    padding: 30px 20px;
+    border-radius: 20px;
+}
